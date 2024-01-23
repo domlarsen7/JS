@@ -1,7 +1,11 @@
 console.log("hello world");
+console.log("sport");
 
-var hello = 9;
+var hello = 7;
 
-hello *= 9;
+hello++;
+
+var sport = prompt ("what is your favorite sport");
 
 console.log(hello)
+console.log(sport)
