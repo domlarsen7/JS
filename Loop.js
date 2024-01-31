@@ -1,9 +1,13 @@
-var i = 1;
-console.log(i);
-i++;
+var num = 1;
 
-console.log(i);
-for (let i = 0; i <= 10; i++)
+for (let i = 0; i <= 5; i++)
 {
-    document.write(i + " ");
+    
+    if 
+    (num%2 == 1) 
+    {
+        console.log(num);
+    }
+
+    (num++);
 }
