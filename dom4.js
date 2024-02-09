@@ -1,16 +1,20 @@
-var teamName = document.getElementById("stepThree").innerHTML;
-console.log(teamName);
+const $ = selector => document.querySelector(selector);
+var number = document.getElementById("stepThree").innerHTML;
+console.log(number);
 
-const par = document.createElement("p");
 
-const tms = ["Vikings", "Packers", "Chiefs", "Broncos", "Cowboys"];
-
-for (let tm of tms)
-{
-    const p = document.createElement("p");
-    const text = document.createTextNode(tm);
-    p.appendChild(text);
-    div.appendChild(p);
+for (let i = 0; i < 5; i++) {
+  number += "The number is " + i + "<br>";
+  document.getElementById("stepThree").innerHTML = number.toString();
 }
-const node = $("div");
 
+const changeColor = () => {
+  document.body.style.backgroundColor = "red";
+  document.getElementById("stepThree").style.backgroundColor = "yellow";
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    $("#color").addEventListener("click", changeColor);
+});
